@@ -1,6 +1,6 @@
 Homework 3- Password Generator
 
-[Screenshot]()
+[Screenshot](https://github.com/jlw429/PWGenHW3/blob/main/Assets/ScreenshotHw3.png)
 Char code link: https://csspoint101.com/javascript-password-generator/
 
 This is a password generator using basic JS from what we have learned so far. I used alot of Mozilla developers to help with some new commands such as .fromCharCode . 

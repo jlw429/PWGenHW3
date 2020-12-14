@@ -16,8 +16,6 @@ generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
 
-  alert('I see you are here for a password, Lets goooooo!');
-
   let passSize = prompt('Select password size by typing in below. Minimum is 8 characters, Maximum is 128 characters');
 
   while (passSize < 8 || passSize > 128 || isNaN(passSize)) {

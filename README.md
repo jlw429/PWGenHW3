@@ -9,3 +9,4 @@ It has provided me a few sleepless nights (along with some bashing my head on th
 
 All bugs have been ironed out. 
 
+Also added alot more comments in my code. It really helped build the framework!

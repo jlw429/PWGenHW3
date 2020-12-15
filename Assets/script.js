@@ -42,32 +42,32 @@ function generatePassword() {
   //The biggest problem. I first looked for a "all values", then I watched a YT video that showed you can get values from the Charcode. After alot and alot of research. I had my variable form an empty array and then took and built on each value (Upper, Lower, Symbols, Numbers)
   let possibleCharacters = [];
   if (useLower) {
-    for (i = 97; i <= 122; i++) {
+    for (let i = 97; i <= 122; i++) {
       possibleCharacters.push(String.fromCharCode(i));
     }
   }
   if (useUpper) {
-    for (i = 65; i <= 90; i++) {
+    for (let i = 65; i <= 90; i++) {
       possibleCharacters.push(String.fromCharCode(i));
     }
   }
   if (useNumbers) {
-    for (i = 48; i <= 57; i++) {
+    for (let i = 48; i <= 57; i++) {
       possibleCharacters.push(String.fromCharCode(i));
     }
   }
   if (useSymbols) {
-    for (i = 33; i <= 47; i++) {
+    for (let i = 33; i <= 47; i++) {
       possibleCharacters.push(String.fromCharCode(i));
     }
-    for (i = 58; i <= 64; i++) {
+    for (let i = 58; i <= 64; i++) {
       possibleCharacters.push(String.fromCharCode(i));
     }
   }
   
   //Where it all comes together. My possibleCharacters array was now filled from the for loops. I took the password variable that was given and I generated it using the passSize paramets along with the posChar variable. Using math floor/random. the loop worked!
   let password = '';
-  for (i = 0; i < passSize; i++) {
+  for (let i = 0; i < passSize; i++) {
     let randomIndex = Math.floor(possibleCharacters.length * Math.random());
     password = password + possibleCharacters[randomIndex]
   }
